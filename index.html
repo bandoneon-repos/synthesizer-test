@@ -6227,6 +6227,20 @@ if (typeof module === "undefined") {
 </head>
 <body>
 
+<h1>Bandoneon Synthesizer</h1>
+<p>
+This software is presented here for evaluation purposes only.
+</p>
+<hr>
+<ul style="list-style-type: disc">
+    <li>Please plug a MIDI controller, the first port will be used</li>
+    <li>Some web browsers may not support MIDI, or do require permission to be granted</li>
+    <li>Pressure is currently mapped to MIDI-CC #2 (Breath)</li>
+    <li>"Piano mode" is provided to allow the synth to be played with a MIDI controller without CC knobs/faders</li>
+    <li>Polyphony is limited to 2 voices</li>
+    <li>This is an "as is" direct compilation from FAUST DSP to Webaudio...</li>
+    <li>...as such, sometimes a voice may miss a note-off message and is left on, if so please reload the page</li>
+</ul>
 
 <script>
     'use strict';
