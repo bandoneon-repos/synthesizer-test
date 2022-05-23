@@ -6110,7 +6110,7 @@ function startbandoneonFMAlfaV2()
 function startNewbandoneonFMAlfaV2()
 {
     if (isWasm && workletAvailable()) {
-        factory = new FaustbandoneonFMAlfaV2Poly(audioCtx, 16, "");
+        factory = new FaustbandoneonFMAlfaV2Poly(audioCtx, 2, "");
         factory.load()
         .then((aw_node) => startbandoneonFMAlfaV2Aux(aw_node))
         .catch((error) => { console.log(error); console.log("Faust mydsp cannot be loaded or compiled"); });
