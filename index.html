@@ -6352,7 +6352,7 @@ This software is presented here for evaluation purposes only.
         if (typeof WebAssembly === "undefined") return alert("WebAssembly is not supported in this browser !");
         if (!window[dspName + "Poly"]) return console.error(dspName + " instance not found.");
         const bufferSize = bufferSizeIn || 1024;
-        window[dspName + "Poly"].createbandoneonFMAlfaV2(audioCtx, bufferSize, 16)
+        window[dspName + "Poly"].createbandoneonFMAlfaV2(audioCtx, bufferSize, 2)
         .then(dsp => {
             if (!dsp) return console.error("Error in bandoneonFMAlfaV2 creation.");
             if (dspNode) { // destroy current
